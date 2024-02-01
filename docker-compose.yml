@@ -1,0 +1,19 @@
+version: '1.0'
+
+services:
+  database-edify:
+    container_name: database
+    image: postgres:11-alpine
+    volumes:
+      - volume-edify:/var/lib/postgresql/data
+    restart: always
+    environment:
+      - POSTGRES_DB=edify
+      - POSTGRES_USER=edify
+      - POSTGRES_PASSWORD=edify
+
+    ports:
+      - 8866:5432
+
+volumes:
+  volume-edify:
