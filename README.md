@@ -36,6 +36,8 @@
 
 Siga estas etapas para instalar e executar a aplicação:
 
+<h2> Node v16.19.0 </h2>
+
 <h2> Banco de dados </h2>
 
 ```bash
